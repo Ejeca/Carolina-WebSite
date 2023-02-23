@@ -7,138 +7,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            /* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 400px;
-  display: none;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: "Lato", sans-serif;
-            }
-            .w3-bar , .w3-bar-item {
-            color: blueviolet;
-            }
-            .column{
-                float: left;
-                width: 50%;
-                padding: 10px;
-                }
-            .row {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            body,
-            html {
-                height: 100%;
-                color: #777;
-                line-height: 1.8;
-            }
-
-            /* Create a Parallax Effect */
-            .bgimg-1,
-            .bgimg-2,
-            .bgimg-3 {
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            /* First image (Logo. Full height) */
-            .bgimg-1 {
-                background-image: url('https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911');
-                min-height: 100%;
-            }
-
-            /* Second image (Portfolio) */
-            .bgimg-2 {
-                background-image: url("https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911");
-                min-height: 400px;
-            }
-
-            /* Third image (Contact) */
-            .bgimg-3 {
-                background-image: url("https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911");
-                min-height: 400px;
-            }
-
-            .lgimg-3 {
-                background-image: url("https://static.wixstatic.com/media/c62150_db46d8856fac415d91b45bd0ab11d5f2~mv2.png/v1/fill/w_56,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Lyra%20Wallpaper.png");
-                min-height: 100px;
-            }
-
-            .w3-wide {
-                letter-spacing: 10px;
-            }
-
-            .w3-hover-opacity {
-                cursor: pointer;
-            }
-
-            /* Turn off parallax scrolling for tablets and phones */
-            @media only screen and (max-device-width: 1600px) {
-
-                .bgimg-1,
-                .bgimg-2,
-                .bgimg-3 {
-                    background-attachment: scroll;
-                    min-height: 400px;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 <body>
 
@@ -246,49 +115,73 @@
                 them bigger</em></p><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105152.png?v=1676458695145" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist over the mountains">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105258.png?v=1676458696317" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105314.png?v=1676458696799" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Bear closeup">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105326.png?v=1676458697331" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
+<div class="servicescontainer">
+        <figure class="figure1 image-block col-xs-12 col-md-3">
+            <h1>Consulta de astrologia</h1>
+            <img src="https://i.pinimg.com/564x/73/94/6e/73946efe069d2207637f5d0a7f98bfeb.jpg" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <button>
+                    More Info
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="figure1 image-block col-xs-12 col-md-3">
+            <h1>Consulta Mediúnica</h1>
+            <img src="https://i.pinimg.com/564x/73/94/6e/73946efe069d2207637f5d0a7f98bfeb.jpg" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <button>
+                    More Info
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="figure1 image-block col-xs-12 col-md-3">
+            <h1>Limpeza e Desbloqueio Energético</h1>
+            <img src="https://i.pinimg.com/564x/73/94/6e/73946efe069d2207637f5d0a7f98bfeb.jpg" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <button>
+                    More Info
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="figure1 image-block col-xs-12 col-md-3">
+            <h1>Terapia Multidimensional</h1>
+            <img src="https://i.pinimg.com/564x/73/94/6e/73946efe069d2207637f5d0a7f98bfeb.jpg" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <button>
+                    More Info
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="figure1 image-block col-xs-12 col-md-3">
+            <h1>Consulta Terapêutica</h1>
+            <img src="https://i.pinimg.com/564x/73/94/6e/73946efe069d2207637f5d0a7f98bfeb.jpg" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <button>
+                    More Info
+                </button>
+            </figcaption>
+        </figure>
         </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105341.png?v=1676458697988" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105407.png?v=1676458698613" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="My beloved typewriter">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105502.png?v=1676458699232" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Empty ghost train">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/Screenshot%202023-02-15%20105241.png?v=1676458695796" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-            </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-        </div>
-    </div>
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -308,241 +201,41 @@
     </div>
 
     <!-- Container (Contact Section) -->
-    <div class="w3-content w3-padding-64 w3-container" id="contact">
-        <h3 class="w3-center">Faz o teu agendamento</h3>
-        <p class="w3-center"><em>Escolhe dentro das opcoes a baixo!</em></p>
-      <div class="w3-row ">
-        <div class="tab">
-            <button class="tablinks" onmouseover="openCity(event, 'London')">Tarot</button>
-            <button class="tablinks" onmouseover="openCity(event, 'Paris')">Mesa</button>
-            <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Astrologia</button>
-            <button class="tablinks" onmouseover="opneCity(event, 'Multidimensional')">Terapia Multidimensional </button>
-            <button class="tablinks" onmouseover="opneCity(event, 'Terapêutica')">Consulta Terapêutica </button>
-            <button class="tablinks" onmouseover="opneCity(event, 'Limpeza')">Limpeza e Desbloqueio Energético</button>
-          </div>
-          
-          <div id="London" class="tabcontent">
+    <div class="body1">
+    <form action="https://formspree.io/f/meqwadbw" method="post">
+        <div class="elem-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="Cliente" placeholder="O teu Nome" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="Email do Cliente" placeholder="agendamento@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">telemovel</label>
+          <input type="tel" id="phone" name="Contacto do cliente" placeholder="912******" required>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Data</label>
+          <input type="date" id="Data de agendamento" name="checkin" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Escolhe o serviço</label>
+          <select id="room-selection" name="serviço" required>
+              <option value="Limpeza">Limpeza e Desbloqueio Energético</option>
+              <option value="astrologia">Consulta de astrologia</option>
+              <option value="Mediúnica">Consulta Mediúnica</option>
+              <option value="Astral(Infantil)">Encomendar Interpretação de mapa Astral(Infantil)</option>
+              <option value="Multidimensional">Terapia Multidimensional</option>
+              <option value="Terapêutica">Consulta Terapêutica</option>
+
+          </select>
+        </div>
+        <hr>
        
-          
-            <div class="w3-col w3-padding-32  w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw"
-                    method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-                </div>
-          </div>
-          
-          <div id="Paris" class="tabcontent">
-            <div class="w3-col w3-padding-32 w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Remoto/presencial<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 57$
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-                        carolina1996@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw" method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-          </div> 
-          </div>
-          
-          <div id="Tokyo" class="tabcontent">
-            <div class="w3-col w3-padding-32 w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large ">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw"
-                    method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-              <div id="Multidimensional" class="tabcontent">
-                 <div class="w3-col w3-padding-32 w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large ">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Remoto<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 57$<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw"
-                    method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                   </div>
-                   
-                   <div id="Terapêutica" class="tabcontent">
-       
-          
-            <div class="w3-col w3-padding-32  w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw"
-                    method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-               <div id="Limpeza" class="tabcontent">
-       
-          
-            <div class="w3-col w3-padding-32  w3-section">
-                <div class="w3-col m4 ">
-                    <img src="https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/capa.jpg?v=1676406573599" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                        151515<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        mail@mail.com<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                    <form action="https://formspree.io/f/meqwadbw"
-                    method="POST">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="date" placeholder="Message" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </form>
-                </div>
-                </div>
-                </div>
-                </div>
-                     </div>
-                   </div>
-                </div>
-                </div>
-              </div>
-          </div>
-          </div>
-          
-          <div class="clearfix"></div>
-          
-          <script>
-          function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-          </script>
+        <button type="submit">Agenda ja!</button>
+      </form>
     </div>
 </div>
-
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -554,9 +247,9 @@
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="Francisco Silva" target="_blank">Start now</a>
+</footer>
     <!-- Footer end. -->
-    </footer>
 
     <script>
         // Modal Image Gallery

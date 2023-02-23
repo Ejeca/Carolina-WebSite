@@ -1,0 +1,317 @@
+
+:root {     
+--base-duration:500ms;
+
+    --color-1: #2c3e50;
+    --color-2: #1abc9c;
+    --color-3: #2ecc71;
+    
+    
+    --sm: new-breakpoint(min-width 320px);
+    --med: new-breakpoint(min-width 768px);
+    --lg: new-breakpoint(min-width 1024px);
+        }
+   
+        /*tabela de servicos*/
+        .servicescontainer{
+            position: relative;
+           display: flex;
+           align-items: center;
+          justify-content: center;
+     width: 100%;
+      height: 100vh;
+        }
+        .figure1 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 375px;
+            min-width: 375px;
+            height: 690px;
+            border-radius: 10px;
+            box-shadow: 
+                0 1px 3px rgba(0,0,0,0.12), 
+                0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            overflow: hidden;
+        }
+        .figure1:hover {
+                box-shadow: 
+                    0 14px 28px rgba(0,0,0,0.25), 
+                    0 10px 10px rgba(0,0,0,0.22);
+        }
+        .figure1 h1 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 48px;
+            font-weight: 100;
+            line-height: 1;
+            opacity: 1;
+            transform: scale(1);
+            transition: 0.25s ease;
+            z-index: 10;
+        }
+        .figure1:hover h1 {
+                    opacity: 0;
+                    transform: scale(0.7);
+                }
+                .figure1 img {
+                    height: 100%;
+                    transition: 0.25s;
+                }
+        .figure1:hover img {
+                    transform: scale(1.25);
+                }
+        .figure1:hover figcaption{
+                bottom: 0;
+            }
+        .figure1 figcaption {
+                position: absolute;
+                bottom: -34%;
+                left: 0;
+                width: 100%;
+                margin: 0;
+                padding: 30px;
+                background-color: rgba(0,0,0,0.85);
+                box-shadow: 0 0 20px rgba(0,0,0,0.4);
+                color: white;
+                line-height: 1;
+                transition: 0.25s;
+                
+        }
+        figcaption h3 {
+                    margin: 0 0 20px;
+                    padding: 0;
+                }
+        figcaption p {
+                    font-size: 14px;
+                    line-height: 1.75;
+                }
+        figcaption button {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 0 0;
+                    padding: 10px 30px;
+                    background-color: var(--color-2);
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            @media only screen and (max-width:768px) {
+                .figure1 {   
+                    margin: 0;
+                    margin-top: 10px;
+                             }
+                .servicescontainer{
+                    display: inline-block;
+                }
+            }
+
+            
+             
+        
+        
+    
+                
+        
+    
+    
+                div.elem-group {
+      margin: 20px 0;
+    }
+    
+    div.elem-group.inlined {
+      width: 105%;
+      display: inline-block;
+    }
+    
+    label {
+      display: block;
+      font-family: "Lato", sans-serif;
+      padding-bottom: 10px;
+      font-size: 1.25em;
+    }
+    
+    input, select, textarea {
+      border-radius: 2px;
+      border: 2px solid #777;
+      box-sizing: border-box;
+      font-size: 1.25em;
+      font-family: "Lato", sans-serif;
+      width: 100%;
+      padding: 10px;
+    }
+    
+    div.elem-group.inlined input {
+      width: 95%;
+      display: inline-block;
+    }
+    
+    textarea {
+      height: 250px;
+    }
+    
+    hr {
+      border: 1px dotted #ccc;
+    }
+    
+    button {
+      height: 50px;
+      background: rgb(219, 107, 230);
+      border: none;
+      color: white;
+      font-size: 1.25em;
+      font-family: "Lato", sans-serif;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      border: 2px solid black;
+    }
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 30%;
+      height: 300px;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      border-left: none;
+      height: 400px;
+      display: none;
+    }
+    
+    /* Clear floats after the tab */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+                body,
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: "Lato", sans-serif;
+                }
+                .w3-bar , .w3-bar-item {
+                color: blueviolet;
+                }
+                .column{
+                    float: left;
+                    width: 50%;
+                    padding: 10px;
+                    }
+                .row {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                body,
+                html {
+                    height: 100%;
+                    color: #777;
+                    line-height: 1.8;
+                }
+    
+                /* Create a Parallax Effect */
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3 {
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+    
+                /* First image (Logo. Full height) */
+                .bgimg-1 {
+                    background-image: url('https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911');
+                    min-height: 100%;
+                }
+    
+                /* Second image (Portfolio) */
+                .bgimg-2 {
+                    background-image: url("https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911");
+                    min-height: 400px;
+                }
+    
+                /* Third image (Contact) */
+                .bgimg-3 {
+                    background-image: url("https://cdn.glitch.global/0c15b778-b1fe-413d-b033-1b3ddd686bed/woman_walking_in_the_spiritual_world___distante_view__world_beyond_time_and_space_prompts__VFX__SFX__Seed-1629245_Steps-50_Guidance-7.5.jpeg?v=1676073092911");
+                    min-height: 400px;
+                }
+    
+                .lgimg-3 {
+                    background-image: url("https://static.wixstatic.com/media/c62150_db46d8856fac415d91b45bd0ab11d5f2~mv2.png/v1/fill/w_56,h_79,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Lyra%20Wallpaper.png");
+                    min-height: 100px;
+                }
+    
+                .w3-wide {
+                    letter-spacing: 10px;
+                }
+    
+                .w3-hover-opacity {
+                    cursor: pointer;
+                }
+    
+                /* Turn off parallax scrolling for tablets and phones */
+                @media only screen and (max-device-width: 1600px) {
+    
+                    .bgimg-1,
+                    .bgimg-2,
+                    .bgimg-3 {
+                        background-attachment: scroll;
+                        min-height: 400px;
+                    }
+                }
+
+
+
+                .w3-top {
+                    z-index: 11;
+                }
+
+              
